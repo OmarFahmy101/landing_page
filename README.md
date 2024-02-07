@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Landing Page Project
 
 ## Table of Contents
@@ -11,3 +12,6 @@ The starter project has some HTML and CSS styling to display a static version of
 To get started, open `js/app.js` and start building out the app's functionality
 
 For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+=======
+# landing_page
+>>>>>>> 443589fb039c1a24d0cda1fe0421d5396e97798e
