@@ -20,7 +20,7 @@
 
 /**
  * Define Global Variables
- * 
+ 
 */
 
 
@@ -58,5 +58,31 @@
 // Scroll to section on link click
 
 // Set sections as active
+
+
+//global variables
+const navBar = document.querySelector('.navbar__menu');
+const navBarList = document.querySelector('#navbar__list');
+
+function updateNavbar() {
+
+    const sections = document.querySelectorAll('section');
+
+
+    while (navBarList.firstChild) {
+        navBarList.removeChild(navBarList.firstChild);
+    }
+
+    sections.forEach(section => {
+        const sectionName = section.id;
+        const newLinkElement = document.createElement('a');
+        newLinkElement.href = '#' + sectionName;
+        newLinkElement.textContent = sectionName;
+        navBarList.appendChild(newLinkElement);
+    });
+}
+
+
+document.addEventListener('DOMContentLoaded', updateNavbar);
 
 
