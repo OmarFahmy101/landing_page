@@ -61,9 +61,16 @@ section {
 }
 
 
+
+
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+.active {
+    color: rgb(255, 0, 0);
+    background-color: #000;
+  }
+
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
@@ -81,11 +88,17 @@ section {
     text-decoration: none;
     color: #000;
 }
-
-.navbar__menu .menu__link:hover {
+/* a:active{
     background: #333;
-    color: #fff;
-    transition: ease 0.3s all;
+    color: rgb(225, 65, 65);
+} */
+a:hover {
+    background: #333;
+    color: rgb(225, 65, 65);
+    transition: ease 0.5s all;
+}
+.navbar__menu a:active {
+    color: red;
 }
 
 /* Header Styles */
@@ -95,6 +108,7 @@ section {
     top: 0px;
     width: 100%;
     z-index: 5;
+    height: 5%;
    
 }
 
@@ -222,3 +236,58 @@ section.your-active-class .landing__container::after {
 		           rotate(-360deg);
 	}
 }
+
+.navbar__menu {
+background-color: #3498db;
+width: 100%;
+height: 100%;
+overflow: auto;
+text-align: center;
+}
+
+.navbar__menu a {
+/* float:left; */
+padding: 12px;
+color: rgb(209, 209, 209);
+text-decoration: none;
+font-size: 17px;
+width: 50%;
+text-align: center;
+font-weight: bold;
+
+}
+
+.navbar__menu a:hover{
+    background-color: #0000006e;
+}
+
+.navbar__menu a:active{
+    background-color: #7e4646;
+}
+
+/* @media screen and (max-width = 500px){
+    .navbar__menu a{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+} */
+
+.navbar__menu a{
+    position: relative;
+    /* display: inline-flexbox; */
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #3498db;
+    box-shadow: 0px 5px 0px 0px #226fa3;
+    transition: all 0.5s ease;
+}
+.navbar a:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 2px 0px 0px #2980b9;
+    transform: translateY(3px);
+  } 
+
+  
